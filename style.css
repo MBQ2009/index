@@ -92,11 +92,19 @@ span {
   grid-template-columns: auto auto auto;
   gap: 40px;
   margin: 20px;
+  
+
+ 
 }
 .section2-grid div {
   background-color: rgba(255, 255, 255, 0.233);
   padding: 20px;
   border-radius: 20px;
+  transition:1s ease-in-out;
+}
+.section2-grid div:hover{
+  background-color:red;
+  transform: scale(1.04);
 }
 button {
   padding: 10px;
@@ -138,10 +146,10 @@ img {
 
 .ff-grid {
   display: flex;
-  /* grid-template-columns: auto auto; */
   gap: 100px;
-
   margin-inline: 5%;
+
+
 }
 .title {
   font-size: 2.5rem;
@@ -200,15 +208,17 @@ h1 {
 }
 .btn-grid {
   color: #ff6b00;
-}
+} 
 .mnb-grid {
   background: linear-gradient(90deg, #ff6b00, #ff9f1c);
   color: #ffffff;
   border: none;
   margin-left: 120px;
 }
+
 .section2-grid2{
   text-align: center;
+  transform:translateY(-10px);
 }
 .section-grid3{
   display: flex;
@@ -240,7 +250,12 @@ h1 {
   .section2-grid {
     grid-template-columns: auto;
   }
+   .ff-grid{
+    display: flex;
+    flex-direction: column;
+ } 
 }
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) 
@@ -252,6 +267,10 @@ h1 {
     grid-template-columns: auto;
     
   }
+  .ff-grid{
+
+    flex-wrap: wrap;
+}
   }
 
 /* Medium devices (landscape tablets, 768px and up) */
