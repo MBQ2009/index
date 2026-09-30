@@ -41,7 +41,7 @@ nav ul li:last-child {
 .header-section {
   margin: 10vh;
   display: flex;
-  gap: ;
+  /* gap: ; */
   justify-content: space-between;
   align-items: center;
 }
@@ -76,7 +76,19 @@ nav ul li:last-child {
   border-radius: 200px;
   width: 250px;
   height: 400px;
+  animation-name:classB;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  position:absolute;
+  margin-top: 50px;
+  right: 20px;
+  
 }
+@keyframes classB{
+  from{top: 0px;}
+  to {top:20px;}
+}
+
 span {
   color: var(--primary-color);
 }
@@ -101,11 +113,18 @@ span {
   padding: 20px;
   border-radius: 20px;
   transition:1s ease-in-out;
+    animation-name: myAnimation;
+  animation-duration: 4s;
+  
 }
 .section2-grid div:hover{
   background-color:red;
   transform: scale(1.04);
+  color:black;
+  
 }
+
+
 button {
   padding: 10px;
   border-radius: 10px;
@@ -258,11 +277,10 @@ h1 {
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) 
+@media only screen and (min-width: 600px) {
   nav ul {
     display: none;
   }
-  .header-section {
   .section2-grid {
     grid-template-columns: auto;
     
@@ -274,10 +292,10 @@ h1 {
   }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
+@media only screen and (min-width: 1200px) {}
